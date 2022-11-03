@@ -1,21 +1,21 @@
 <shedule>
     <day>
-    <name>Среда</name>
-    <lessons>
-        <lesson>
-            <name>Информатика(ЛАБ)</name>
-            <time>13:30-15:00</time>
-            <audience>1328(бывш. 371)</audience>
-            <format>Очно-дистанционный</format>
-            <week>нечетная</week>
-        </lesson>
-        <lesson>
-            <name>Информатика(ЛАБ)</name>
-            <time>15:20-16:50</time>
-            <audience>1328(бывш. 371)</audience>
-            <format>Очно-дистанционный</format>
-            <week>нечетная</week>
-        </lesson>
-    </lessons>
+        <name>Среда</name>
+        <lessons>
+            <lesson>
+                <name>Информатика(ЛАБ)</name>
+                <time>13:30-15:00</time>
+                <audience>1328(бывш. 371)</audience>
+                <format>Очно-дистанционный</format>
+                <week>нечетная</week>
+            </lesson>
+            <lesson>
+                <name>Информатика(ЛАБ)</name>
+                <time>15:20-16:50</time>
+                <audience>1328(бывш. 371)</audience>
+                <format>Очно-дистанционный</format>
+                <week>нечетная</week>
+            </lesson>
+        </lessons>
     </day>
 </shedule>
