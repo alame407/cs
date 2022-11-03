@@ -158,7 +158,7 @@ class Parser:
 def main():
     xml_file = open("shedule.xml", "r", encoding="utf-8")
     string_xml_file = xml_file.read().replace("\n", "").replace(" ", "")
-    out_yaml_file = open("shedule.yaml", "w")
+    out_yaml_file = open("shedule.yaml", "w", encoding="utf-8")
     parser = Parser(string_xml_file)
     parser.calc_output()
     out_yaml_file.write(parser.output)
