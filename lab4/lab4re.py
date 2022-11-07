@@ -1,3 +1,5 @@
+import re
+
 
 class Tag:
     def __init__(self, name, index_in_string, string):
@@ -27,19 +29,10 @@ class Parser:
         self.output = ""
 
     def __find_tags(self):
-        current_string = ""
-        start = 0
-        for i in range(len(self.data)):
-            if self.data[i] == "<":
-                start = i
-                current_string = self.data[i]
-            elif self.data[i] == ">":
-                current_string += self.data[i]
-                tag = Tag(current_string, start, self.data)
-                if "/" not in current_string:
-                    self.tags.append(tag)
-            else:
-                current_string += self.data[i]
+        tags = re.finditer(r"<\w+>", self.data)
+        for tag in tags:
+            name = self.data[tag.start():tag.end()]
+            self.tags.append(Tag(name,tag.start(), self.data))
 
     def __calc_depth(self):
         for i in range(len(self.tags)):
@@ -163,8 +156,8 @@ class Parser:
 
 def main():
     xml_file = open("shedule.xml", "r", encoding="utf-8")
-    string_xml_file = xml_file.read().replace("\n", "").replace(" ", "")
-    out_yaml_file = open("shedule.yaml", "w", encoding="utf-8")
+    string_xml_file = re.sub(r"[\n\s]", "", xml_file.read())
+    out_yaml_file = open("sheduleWithRe.yaml", "w", encoding="utf-8")
     parser = Parser(string_xml_file)
     parser.calc_output()
     out_yaml_file.write(parser.output)
