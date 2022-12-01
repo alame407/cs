@@ -1,9 +1,12 @@
 <shedule>
     <day>
         <name>Среда</name>
+        <!--comment-->
         <lessons>
             <lesson>
                 <name>Информатика(ЛАБ)</name>
+                <!--comment-->
+                <!--comment-->
                 <time>13:30-15:00</time>
                 <audience>1328(бывш. 371)</audience>
                 <format>Очно-дистанционный</format>
@@ -12,6 +15,7 @@
             <lesson>
                 <name>Информатика(ЛАБ)</name>
                 <time>15:20-16:50</time>
+                <!--comment-->
                 <audience>1328(бывш. 371)</audience>
                 <format>Очно-дистанционный</format>
                 <week>нечетная</week>

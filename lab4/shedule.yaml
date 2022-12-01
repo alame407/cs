@@ -1,15 +1,19 @@
 shedule:
   day:
     name: Среда
+    #comment
     lessons:
       lesson:
         - name: Информатика(ЛАБ)
+          #comment
+          #comment
           time: 13:30-15:00
           audience: 1328(бывш.371)
           format: Очно-дистанционный
           week: нечетная
         - name: Информатика(ЛАБ)
           time: 15:20-16:50
+          #comment
           audience: 1328(бывш.371)
           format: Очно-дистанционный
           week: нечетная
